@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,200;1,800&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Sarala:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">  
+    <link
+        href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,200;1,800&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=Sarala:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/button.css">
     <link rel="stylesheet" href="css/records.css">
     <link rel="stylesheet" href="css/modal.css">
     <script src="main.js" defer></script>
     <title>CRUD</title>
 </head>
+
 <body>
     <header>
         <h1 class="header-title">Cadastro de Clientes</h1>
     </header>
     <main>
         <button type="button" class="button blue mobile" id="cadastrarCliente">Cadastrar Cliente</button>
-        <table class="records">
+        <table id="tableClient" class="records">
             <thead>
                 <tr>
                     <th>nome</th>
@@ -31,7 +35,7 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
+                <!--tr>
                     <td>Marcos</td>
                     <td>marcos.srt@gmail.com</td>
                     <td>(11) 97234-0000</td>
@@ -60,14 +64,14 @@
                         <button type="button" class="button green">editar</button>
                         <button type="button" class="button red">excluir</button>
                     </td>
-                </tr>
+                </tr> -->
             </tbody>
         </table>
-        <div class="modal" id="modal"> 
+        <div class="modal" id="modal">
             <div class="modal-content">
                 <header class="modal-header">
-                  <h2>Novo Cliente</h2>
-                  <span class="modal-close" id="modalClose">&#10006;</span>  
+                    <h2>Novo Cliente</h2>
+                    <span class="modal-close" id="modalClose">&#10006;</span>
                 </header>
                 <form id="form" class="modal-form">
                     <input type="text" id="nome" class="modal-field" placeholder="Nome" required>
@@ -86,4 +90,6 @@
         Copyright &copy; Prof. Fernando Leonid
     </footer>
 </body>
+
 </html>
+
